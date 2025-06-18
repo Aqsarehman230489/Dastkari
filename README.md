@@ -106,7 +106,7 @@ Ensure the following NuGet packages are installed:
 | Package | Purpose |
 |---------|---------|
 | `Blazorise.Bootstrap` | UI styling based on Bootstrap |
-| `Blazorise.Charts` | Real-time charting components |
+| `Chart.js (via JS Interop)` | For rendering sales revenue bar charts in the admin dashboard |
 | `Blazorise.Icons.FontAwesome` | FontAwesome icons for UI |
 | `Microsoft.AspNetCore.Authentication.Google` | Google OAuth integration |
 | `Stripe.net` | Stripe payment processing library |
@@ -115,8 +115,23 @@ You can install these via **NuGet Package Manager** or use the CLI:
 
 ```bash
 dotnet add package Blazorise.Bootstrap
-dotnet add package Blazorise.Charts
 dotnet add package Blazorise.Icons.FontAwesome
 dotnet add package Microsoft.AspNetCore.Authentication.Google
 dotnet add package Stripe.net
+ ```
+
+### 🤖 Chatbot Integration (Lyro via Tidio)
+
+An AI-powered chatbot is integrated into the platform using **Lyro by Tidio.com**.  
+It provides real-time support to both users and artisans by answering frequently asked questions and assisting with basic navigation across the site.
+
+---
+
+### 📨 Formspree API Integration
+
+The event registration form on the platform uses **Formspree API** to securely send form data directly to the admin’s email (Gmail).  
+This allows for efficient artist-user communication and seamless event participation.
+
+---
+
 
