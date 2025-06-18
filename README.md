@@ -1,4 +1,4 @@
-# 🎨 Dastkari: Artisans Marketplace Website
+# Dastkari: Artisans Marketplace Website
 
 Dastkari is a collaborative artisan marketplace that connects local Pakistani artists with the world. It allows artisans to sell their handmade products, teach skills, host cultural events, and showcase the vibrant heritage of Pakistan through a modern, user-friendly platform.
 
@@ -78,3 +78,45 @@ An AI-powered chatbot (Lyro) is integrated using Tidio.com to assist users and a
 | Security        | Google OAuth, Stripe, GitHub Secret Scanning |
 
 ---
+
+## 🔧 Dependencies & Setup Instructions
+
+Before running the project, ensure the following keys, tools, and dependencies are properly set up:
+
+### 🔑 API Keys (Required in `appsettings.json`)
+| Key | Purpose |
+|-----|---------|
+| `Stripe:SecretKey` | For Stripe payment gateway integration |
+| `Google:ClientId` | For Google OAuth authentication |
+| `Google:ClientSecret` | For Google OAuth authentication |
+
+---
+
+### 🗃️ Database Setup
+
+- Import the SQL Server database provided in the project to ensure all tables (Users, Products, Orders, Events, etc.) are available.
+- Update your connection string in `appsettings.json`.
+
+---
+
+### 📦 NuGet Packages Required
+
+Ensure the following NuGet packages are installed:
+
+| Package | Purpose |
+|---------|---------|
+| `Blazorise.Bootstrap` | UI styling based on Bootstrap |
+| `Blazorise.Charts` | Real-time charting components |
+| `Blazorise.Icons.FontAwesome` | FontAwesome icons for UI |
+| `Microsoft.AspNetCore.Authentication.Google` | Google OAuth integration |
+| `Stripe.net` | Stripe payment processing library |
+
+You can install these via **NuGet Package Manager** or use the CLI:
+
+```bash
+dotnet add package Blazorise.Bootstrap
+dotnet add package Blazorise.Charts
+dotnet add package Blazorise.Icons.FontAwesome
+dotnet add package Microsoft.AspNetCore.Authentication.Google
+dotnet add package Stripe.net
+
