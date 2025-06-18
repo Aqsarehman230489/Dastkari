@@ -1,0 +1,77 @@
+# Ignore build outputs
+bin/
+obj/
+
+# Ignore user-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Ignore Visual Studio settings folders
+.vs/
+.vscode/
+
+# Ignore Rider IDE settings
+.idea/
+
+# Ignore log files
+*.log
+
+# Ignore temporary files
+*.tmp
+*.bak
+*.cache
+
+# Ignore auto-generated debug files
+*.pdb
+
+# Ignore NuGet packages and metadata
+*.nupkg
+*.snupkg
+packages/
+project.lock.json
+project.fragment.lock.json
+
+# Ignore publish outputs
+publish/
+out/
+dist/
+Release/
+Debug/
+
+# Ignore database files
+*.mdf
+*.ldf
+
+# Ignore local secrets and development config
+appsettings.Development.json
+appsettings.Local.json
+secrets.json
+
+# Ignore test results
+TestResults/
+
+# Ignore coverage results
+coverage/
+*.coverage
+*.coveragexml
+*.codecoverage
+
+# Ignore environment files
+.env
+.env.*
+
+# Ignore Recycle Bin on Windows
+$RECYCLE.BIN/
+
+# Ignore Thumbs.db or desktop.ini (Windows)
+Thumbs.db
+desktop.ini
+
+# Ignore JetBrains Rider/Resharper caches
+.idea/
+*.DotSettings.user
+
+# Ignore custom generated code folder (if any)
+Generated_Code/
